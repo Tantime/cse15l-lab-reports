@@ -1,0 +1,1 @@
+![Image](cse15l-week-2-vscode.png)
