@@ -1,23 +1,7 @@
-Hi!
-hihi  
-*I wonder if that line break up there worked >.>*  
-## Matthew's To-Do List
-- walk dog
-- lunch
-- tennis @3pm
-> hungry... `monkey`
+# Week 2 Lab Report - VS Code, SSH, and command-line tools
+*Author: Matthew Tan*
 
-# Week 2 Lab Report
-
-## Lab Instructions
-Week 2 Lab Report
-Before Friday, January 14, you’ll submit a lab report by writing a blog post like we just described. The topic will be remote access.
-
-You will write a tutorial for incoming 15L students (and your future self!) about how to log into a course-specific account on ieng6. Your post should include the steps you took, along with screenshots of what each step looked like. You’re free to use the screenshots you took for lab 1, or new ones. Complete any steps you didn’t complete in your group on your own.
-
-Overall, make sure you have at least 6 screenshots, one for each of the steps below (though more is useful, remember that this will help out your future self). For each step include 2-3 sentences or bullet points describing what you did.
-
-## Step 1: Installing VScode
+## Step 1: Installing VS Code
 Download Visual Studio Code [here](https://code.visualstudio.com/download). Once you've completed the installation, the VS Code launch screen should look something like this:  
 
 ![Image](vscode-installed.png)
@@ -57,4 +41,13 @@ SSH keys are a great way to avoid having to enter your password each time you wa
 Now you should no longer have to re-enter your password each time you want to ssh or scp.
 
 ## Step 6: Optimizing Remote Running
-Finally, there are a few tips to help you navigate the command-line tools more efficiently. The first is to 
+Finally, there are a few tips to help you navigate the command-line tools more efficiently. The first (and my personal favorite) is using `up-arrow` in the command-line to automatically pull up your last-used command(s). Next, you can use any terminal command (in quotes) at the end of an ssh command to run it directly rather than having to type it out separately (see example below).
+
+![image](command-with-ssh.png)
+
+My final tip is to use semicolons to run multiple commands at once (see example below).
+
+![image](multiple-commands.png)
+
+## Conclusions
+This lab covered how to `connect to my course-specific account` using ssh, use `command-line tools` to view file info and copy them over, and taught me how to `utilize the command-line more efficiently`.
