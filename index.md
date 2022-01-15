@@ -2,7 +2,8 @@
 *Author: Matthew Tan*
 
 ## Step 1: Installing VS Code
-Download Visual Studio Code [here](https://code.visualstudio.com/download). Once you've completed the installation, the VS Code launch screen should look something like this:  
+Download Visual Studio Code 
+<a href="https://code.visualstudio.com/download" target="_blank">here</a>. Once you've completed the installation, the VS Code launch screen should look something like this:  
 
 ![Image](vscode-installed.png)
 ## Step 2: Remotely Connecting
