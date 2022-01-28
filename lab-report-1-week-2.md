@@ -28,12 +28,17 @@ The next step is to start triyng out some command-line commands and observe the 
 ![image](trying-commands.png)  
 
 ## Step 4: Moving Files with scp
-The `scp` (secure copy) command is useful for copying files and directories between two locations. The structure of this command is [`scp` + `file/directory` + `course-specific account` + `~/`]  The code block below illustrates how to copy a local file to your course-specfic account.
+The `scp` (secure copy) command is useful for copying files and directories between two locations. The structure of this command is [`scp` + `file/directory` + `course-specific account` + `~/`]. The code block below illustrates how to copy a local file to your course-specfic account.
 > scp WhereAmI.java cs15lwi22aky@ieng6.ucsd.edu:~/
 
-A screenshot of the line in terminal:
+The output should look something like this:
 
-![image](scp-example.png)
+![image](scp-whereami.png)
+
+To confirm the file successfully copied, ssh into your course-specific account and type `ls`.
+
+![image](confirm-whereami-copied.png)
+
 ## Step 5: Setting an SSH Key
 SSH keys are a great way to avoid having to enter your password each time you want to copy over files to the server. To generate your key, enter `ssh-keygen`. The output should look something like:
 
@@ -53,6 +58,24 @@ My final tip is to use semicolons to run multiple commands at once (see example 
 ![image](multiple-commands.png)
 
 If you choose to implement these tips into your command-line workflow, they will save you time by allowing you to avoid unnecessary keystrokes.
+
+## Step 6 (pt. 2) - Tips in Action
+To give a concrete an example of approximately how many keystrokes using the previously listed tips usually save me, I'll walk through an example of making a local edit to a file, copying it to the remote server and running it.
+
+To create the file locally, I type `touch WhereAmI.java`. 
+Then, I enter `nano WhereAmI.java` to edit the java file (you can edit the file in any text editor).
+
+![image](touch-nano-whereami.png)
+
+Next, I copy the file over the remote server using the `scp` command.
+
+![image](scp-whereami.png)
+
+Finally, I use the `ssh`, `javac`, and `java` commands separated by semicolons in the same line to log onto the remote server, compile the code, and run the program.
+
+![image](ssh-javac-java-whereami.png)
+
+By using the tips listed above in this example, I saved around `20` keystrokes.
 
 ## Conclusions
 This lab covered how to `connect to my course-specific account` using ssh, use `command-line tools` to view file info and copy them over, and taught me how to `utilize the command-line more efficiently`.
