@@ -42,13 +42,17 @@ SSH keys are a great way to avoid having to enter your password each time you wa
 Now you should no longer have to re-enter your password each time you want to ssh or scp.
 
 ## Step 6: Optimizing Remote Running
-Finally, there are a few tips to help you navigate the command-line tools more efficiently. The first (and my personal favorite) is using `up-arrow` in the command-line to automatically pull up your last-used command(s). Next, you can use any terminal command (in quotes) at the end of an ssh command to run it directly rather than having to type it out separately (see example below).
+Finally, there are a few tips to help you navigate the command-line tools more efficiently. The first (and my personal favorite) is using `up-arrow` in the command-line to automatically pull up your last-used command(s). This shortcut is a huge time-saver that usually saves me anywhere between `10-50 keystrokes` on average. It especially comes in handy when I'm writing programs and need to recompile and rerun the same files multiple times.
+
+Next, you can use any terminal command (in quotes) at the end of an ssh command to run it directly rather than having to type it out separately (see example below). If you're using this tip alongside up-arrow, it can save you a `few extra keystrokes`.
 
 ![image](command-with-ssh.png)
 
-My final tip is to use semicolons to run multiple commands at once (see example below).
+My final tip is to use semicolons to run multiple commands at once (see example below). This is helpful in the same way as the previous tip in that it helps you avoid having to run commands on separate lines. It will also help you save a `couple keystrokes`.
 
 ![image](multiple-commands.png)
+
+If you choose to implement these tips into your command-line workflow, they will save you time by allowing you to avoid unnecessary keystrokes.
 
 ## Conclusions
 This lab covered how to `connect to my course-specific account` using ssh, use `command-line tools` to view file info and copy them over, and taught me how to `utilize the command-line more efficiently`.
