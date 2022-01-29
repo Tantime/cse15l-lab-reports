@@ -1,24 +1,35 @@
 # Week 4 Lab Report - Incremental Programming and Debugging
 *Author: Matthew Tan*
 
-## Instructions
-Pick three code changes that your group worked on in labs 3 and 4 in order to fix a bug; these should be stored as commits on someone’s repository. Fork the repository so you have your own copy with all the work your group did if you haven’t already.
-
-For each of the three code changes:
-
-- Show a screenshot of the code change diff from Github
-- Link to the test file for a failure-inducing input that prompted you to make that change
-- Show the symptom of that failure-inducing input by showing the output of running the file at the command line for the version where it was failing (this should also be in the commit message history)
-- Write 2-3 sentences describing the relationship between the bug, the symptom, and the failure-inducing input.
-
 ### Code Change #1
-![image](lab2-pngs/lab2-test1.png)
-[Test 1](https://github.com/Tantime/markdown-parse/commit/ef25323083aaa003c62c59b8d2f5ad4b3df34a3b)
+Added print statement to trace values of currentIndex.
+
+![image](lab2-pngs/lab2-change1.png)
+<a href="https://github.com/Tantime/markdown-parse/commit/10452ee1127f00b75af2cd3884f7e2aa2caad09f" target="_blank">link to test-file3.md</a>
+
+Symptom:
+![image](lab2-pngs/lab2-symptom.png)
+
+The symptom of an infinite loop was caused by the failure-inducing input of an md-formatted link enclosed in an extra set of parenthesis. The underlying bug was a never-ending while loop in MarkdownParse's main method due to the conditional `currentIndex < markdown.length()` always being true.
 
 ### Code Change #2
-![image](lab2-pngs/lab2-test2.png)
-[Test 2](https://github.com/Tantime/markdown-parse/commit/10452ee1127f00b75af2cd3884f7e2aa2caad09f)
+Added print statement to trace values of closeParen.
+
+![image](lab2-pngs/lab2-change2.png)
+<a href="https://github.com/Tantime/markdown-parse/commit/10452ee1127f00b75af2cd3884f7e2aa2caad09f" target="_blank">link to test-file3.md</a>
+
+Symptom:
+![image](lab2-pngs/lab2-symptom.png)
+
+The symptom was an infinite loop caused by the failure-inducing input of an md-formatted link enclosed in an extra set of parenthesis. The underlying bug was still the never-ending while loop in MarkdownParse's main method due to the conditional `currentIndex < markdown.length()` always evauluating to true.
 
 ### Code Change #3
+Created JUnit tests to compare expected behavior with actual behavior.
+
 ![image](lab2-pngs/lab2-getlinks2-getlinks3.png)
-[Test 3](https://github.com/Tantime/markdown-parse/commit/06f6858cacf895962624faf061035a0fab457926)
+<a href="https://github.com/Tantime/markdown-parse/commit/10452ee1127f00b75af2cd3884f7e2aa2caad09f" target="_blank">link to test-file3.md</a>
+
+Symptom:
+![image](lab2-pngs/lab2-junit-output.png)
+
+The symptom and bug was the same as in the first two examples, but the print statements we added earlier helped our lab group trace the values of `currentIndex` and `closeParen` while the program was running. With those values we were able to deduce that `closeParen` would always evaluate to -1 from calling `markdown.indexOf(")", openParen)`. The `indexOf` method evaluated to `-1` due to a domino effect initially caused by the program using the first parenthesis' index for `openParen`.
