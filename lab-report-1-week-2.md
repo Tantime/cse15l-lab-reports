@@ -1,4 +1,4 @@
-# Week 2 Lab Report - VS Code, SSH, and command-line tools
+# Week 2 Lab Report - Remote Access and the Filesystem
 *Author: Matthew Tan*
 
 ## Step 1: Installing VS Code
