@@ -36,7 +36,7 @@ You will be asked to enter it once more for confirmation.
 
 This is what it looked like in my terminal:
 
-(insert ss here)
+![create public key](lab3-pngs/lab3-creating-public-key.png)
 
 <br>
 
@@ -66,7 +66,8 @@ Open your `~/.ssh/config` file, then modify the file to contain the following li
 
 If you're using macOS Sierra 10.12.2 or later, you will need to modify your ~/.ssh/config file to automatically load keys into the ssh-agent and store passphrases in your keychain. I had to do this, so refer to my screenshot below:
 
-(insert both ss here)
+![activate agent + edit ~/.ssh/config](lab3-pngs/lab3-activate-agent-edit-ssh-config.png)
+![edit ~/.ssh/config](lab3-pngs/lab3-edit-ssh-config.png)
 
 Add your SSH private key to the ssh-agent and store your passphrase in the keychain. If you created your key with a different name, or if you are adding an existing key that has a different name, replace *id_ed25519* in the command with the name of your private key file.
 
@@ -74,7 +75,7 @@ Add your SSH private key to the ssh-agent and store your passphrase in the keych
 
 While this method does still work, I received a warning telling me that the -K flag is deprecated and has been replaced by the --apple-use-keychain command, so using that updated command will also work. Refer to the screenshot below:
 
-(insert ss here)
+![add private key to ssh agent](lab3-pngs/lab3-adding-private-key-to-ssh-agent.png)
 
 <br>
 
