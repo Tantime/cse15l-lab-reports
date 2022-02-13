@@ -1,4 +1,4 @@
-# Week 2 Lab Report - Remote Access and the Filesystem
+# Lab Report 1 - Remote Access and the Filesystem
 *Author: Matthew Tan*
 
 ## Step 1: Installing VS Code

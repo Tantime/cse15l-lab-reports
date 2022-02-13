@@ -1,4 +1,4 @@
-# Week 4 Lab Report - Incremental Programming and Debugging
+# Lab Report 2 - Incremental Programming and Debugging
 *Author: Matthew Tan*
 
 ### Code Change #1
