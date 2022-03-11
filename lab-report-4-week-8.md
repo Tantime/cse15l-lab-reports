@@ -96,6 +96,7 @@ Snippet 2 Output:
 <br>
 
 Snippet 3 Output:
+
 ![snippet 3 tester](lab4-pngs/snippet3-test-fail.png)
 
 <br>
