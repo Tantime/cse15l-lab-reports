@@ -53,7 +53,7 @@ Output from given implementation: <br>
 As in the case of test 19, my implementation produced incorrect output while the week 9 implementation replicated the expected result.
 
 ### 2. The bug behind the symptom(s):
-The expected output was `[]]`, but my `getLinks()` threw the `NoSuchElementException` shown above. The code responsible for the excpetion was the following conditional: 
+The expected output was `[]`, but my `getLinks()` threw the `NoSuchElementException` shown above. The code responsible for the excpetion was the following conditional: 
 ![test-19-my-bug](lab5-pngs/test-19-bug-my.png)
 In this case, my code throws an error because it expects there to be a link, but there weren't any specifying brackets or parenthesis. If I change my code to start searching for links once it has seen an open bracket "`(`", followed by some text "`some text`", followed by a closed bracket plus an open parenthesis "`](`", then it won't throw a `NoSuchElementException` when the user did not intend for there to be a link.
 
