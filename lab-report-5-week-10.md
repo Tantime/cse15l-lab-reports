@@ -12,44 +12,52 @@ Explain: <br>
 
 <br>
 
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/ucsd-cse15l-w22/markdown-parse/tree/main/test-files">commonmark-spec test files</a>
 
 ## How did I find the tests with different results?
 
-I found both of the tests with different results simply by manually checking outputs. Using this method, it did not take me very long to find different results between my implementation of MarkdownParse and the one given in week 9.
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/ucsd-cse15l-w22/markdown-parse/tree/main/test-files">Link to the commonmark-spec test files</a>
 
-## Analyzing Output - Test File 1
+I found both of the tests with different results simply by manually checking outputs. Given that there were large differences in implementation, it did not take me very long to find different results between my lab group's version of MarkdownParse and the one we looked at in week 9.
+
+## Analyzing Output - Test File 19
+test-19: <br>
+![test-19](lab5-pngs/test-19.png) <br>
+test-19 correct output: <br>
+![test-19-expected-output](lab5-pngs/test-19-output-expected.png)
 
 ### 1. Which implementation was correct?
 Output from my implementation: <br>
-
+![test-19-my-output](lab5-pngs/test-19-output-my.png)
 
 <br>
 
 Output from given implementation: <br>
+![test-19-given-output](lab5-pngs/test-19-output-given.png)
 
-
-<br>
+Comparing the outputs to the expected output, both implementations were incorrect.
 
 ### 2. The bug behind the symptom(s):
-
+yup
 
 
 <br>
 
-## Analyzing Output - Test File 2
+## Analyzing Output - Test File 652
+test-652: <br>
+![test-652](lab5-pngs/test-652.png) <br>
+test-19 correct output: <br>
+![test-652-expected-output](lab5-pngs/test-652-output-expected.png)
 
 ### 1. Which implementation was correct?
 Output from my implementation: <br>
-
+![test-652-my-output](lab5-pngs/test-652-output-my.png)
 
 <br>
 
 Output from given implementation: <br>
+![test-652-given-output](lab5-pngs/test-652-output-given.png)
 
-
-<br>
+As in the case of test 19, both implementations produced incorrect output.
 
 ### 2. The bug behind the symptom(s):
-
-
+yup
