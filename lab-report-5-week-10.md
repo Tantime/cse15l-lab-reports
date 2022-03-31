@@ -17,8 +17,6 @@ test-19 commonmark output: <br>
 Output from my implementation: <br>
 ![test-19-my-output](lab5-pngs/test-19-output-my.png)
 
-<br>
-
 Output from given implementation: <br>
 ![test-19-given-output](lab5-pngs/test-19-output-given.png)
 
@@ -28,8 +26,6 @@ Comparing the outputs to the expected output, my implementation was incorrect wh
 The expected output was `[]`, but my `getLinks()` threw the `NoSuchElementException` shown above. The code responsible for the excpetion was the following conditional: 
 ![test-19-my-bug](lab5-pngs/test-19-bug-my.png)
 The problem with this behavior is that once my code recognizes that there are brackets in the .md file, it assumes the user intends for there to be a link and will throw an exception if there are no corresponding parenthesis. However, brackets are used for many things other than links, so I need to change this conditional to be more specific in order to be able to replicate the expected output.
-
-<br>
 
 The week 9 implementation of MarkdownParse produced the correct output.
 
@@ -44,8 +40,6 @@ test-19 commonmark output: <br>
 ### 1. Which implementation was correct?
 Output from my implementation: <br>
 ![test-652-my-output](lab5-pngs/test-652-output-my.png)
-
-<br>
 
 Output from given implementation: <br>
 ![test-652-given-output](lab5-pngs/test-652-output-given.png)
